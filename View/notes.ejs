@@ -1,0 +1,41 @@
+<!-- {{>head}}
+<title>Company | Notes</title>
+{{>navbar}} -->
+
+<% layout('layout/BoilerPlate')%>
+
+    <div class="container-fluid">
+        <div>
+            <div class="card m-1 background2">
+                <div class="card-body">
+                    <h5 class="card-title">Do You Want To Add A New College</h5>
+                    <a href="/info" class="btn heading">Click Here!!</a>
+                </div>
+            </div>
+        </div>
+        <% for (let Cllg of college){%>
+
+            <div class="card m-1 background2">
+                <div class="card-body">
+                    <%=Cllg.CollegeName %>
+                </div>
+                <div class="dropdown">
+                    <button class="btn heading textcolor dropdown-toggle mx-2 mb-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Branch
+            </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="<%=Cllg._id%>/post/CSE">Computer Science</a></li>
+                        <li><a class="dropdown-item" href="<%=Cllg._id%>/post/CST">CST</a></li>
+                        <li><a class="dropdown-item" href="<%=Cllg._id%>/post/IT">IT</a></li>
+                        <li><a class="dropdown-item" href="<%=Cllg._id%>/post/ECE">ECE</a></li>
+                        <li><a class="dropdown-item" href="<%=Cllg._id%>/post/EEE">EEE</a></li>
+                        <li><a class="dropdown-item" href="<%=Cllg._id%>/post/BscComputerScience">Mechanical</a></li>
+                    </ul>
+                </div>
+            </div>
+            <% } %>
+
+
+
+
+                <!-- {{>footer}} -->

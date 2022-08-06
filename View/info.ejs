@@ -1,0 +1,31 @@
+<% layout('layout/BoilerPlate')%>
+
+    <div class="container">
+        <form action="/AddCollege" method="POST" class="validated-form" novalidate>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" ">College Name</label>
+                <input type="text " class="form-control " id="exampleInputcollegname " aria-describedby="emailHelp "name="College[CollegeName]">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputEmail1 " class="form-label ">HOD</label>
+                <input type="text " class="form-control " id="exampleInputhod " name='College[HOD]' aria-describedby="emailHelp ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputPassword1 " class="form-label ">Email</label>
+                <input type="email " class="form-control " id="exampleInputemail " name="College[Email] ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputPassword1 " class="form-label ">Phone Number</label>
+                <input type='number' class="form-control " id="exampleInputphone " name="College[PhoneNumber] ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputPassword1 " class="form-label ">Department Details</label>
+                <input type="text " class="form-control " id="exampleInputdepartment " name="College[DepartmentDetails] ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputPassword1 " class="form-label ">Branch</label>
+                <input type="text " class="form-control " id="exampleInputbranch " name="College[Branch] ">
+            </div>
+            <button type="submit " class="btn btn-primary ">Submit</button>
+        </form>
+    </div>

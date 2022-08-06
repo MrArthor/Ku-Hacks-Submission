@@ -1,0 +1,50 @@
+<!-- {{>head}}
+<title>Shelter | Contact</title>
+{{>navbar}} -->
+<% layout('layout/BoilerPlate')%>
+
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="heading mb-1">EMAIL@gmail.com</div>
+                <div class="heading mb-1">9873848046</div>
+                <div class="heading mb-1">Address</div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="100%" height="470px" id="gmap_canvas" src="https://maps.google.com/maps?q=sheikh%20sarai,%20phase-2&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <h5 class="heading">Contact Us</h5>
+
+                <div class="alert alert-success" role="alert">
+                    Thanks to Share Your Query With Us!!!! Our Team Will Contact You Soon!!!! Team : Company.com
+                </div>
+
+                <form method="post" action="/contact">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email Id">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input type="text" class="form-control" name="phone" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Query</label>
+                        <input type="text" class="form-control" name="query" placeholder="Enter Query">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea name="message" rows="5" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="heading text-center border-0 rounded w-100 p-2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- {{>footer}} -->

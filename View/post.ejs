@@ -1,0 +1,43 @@
+<!-- {{>head}}
+<title>Company | Home</title>
+{{>navbar}} -->
+
+<% layout('layout/BoilerPlate')%>
+    <div class="container-fluid">
+        <div class="card mt-1">
+            <div class="card-body heading fs-4 rounded">
+                <%=cllg.CollegeName %>
+            </div>
+        </div>
+        <div class="card mt-1">
+            <div class="card-body heading fs-6 rounded">
+                <%= dept  %>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="card mt-1">
+                <div class="card-body heading fs-4 rounded">
+                    List Of Files In This Department Are
+
+                </div>
+            </div>
+            <% for (let file of filelist){ %>
+                <div class="container-fluid ">
+                    <div class="card mt-1 cardbackground">
+                        <div class="card-body heading fs-4 rounded " style="background-color: #51692d;">
+                            <a href="<%=folder%>/<%=file%>.pdf">
+                                <%=file %>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+
+                    <form action="/<%=cllg._id%>/Upload" method="post" enctype="multipart/form-data" novalidate></form>
+                    <input type="file" multiple name="file" class="form-control mt-2 background1">
+                    <button type="submit" lass="form-control mt-2"> submit</button>
+                    </form>
+        </div>
+
+
+        <!-- {{>footer}} -->

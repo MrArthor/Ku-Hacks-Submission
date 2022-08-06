@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #725757 !important;
+}
+
+.background1 {
+    background-color: #725757;
+}
+
+.background2 {
+    background-color: #EDF5E1 !important;
+}
+
+.textcolor {
+    color: #05386B;
+    font-weight: bold;
+}
+
+.cardbackground {
+    background-color: #51692d !important;
+}
+
+.icon {
+    color: white !important;
+    font-size: 30px !important;
+}
+
+.heading {
+    background-color: #05386B !important;
+    color: #e0a6a6 !important;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.NavBar {
+    background-color: #5089C6;
+}
+
+card-text {
+    color: #a0a3a7;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.nav-link,
+.navbar-brand,
+footer,
+card-link {
+    color: rgb(255, 244, 181);
+}
